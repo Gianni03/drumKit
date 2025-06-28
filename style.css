@@ -7,8 +7,8 @@ html {
   background-size: cover;
 }
 
-.realDrum{
-  background: url('./bgblackdrums.jpg') bottom center;
+.realDrum {
+  background: url('./bgdrumlght.jpg') bottom center;
   background-size: cover;
 }
 
@@ -53,7 +53,7 @@ header ul {
 header ul li {
   margin: 0 1rem;
   font-size: 2rem;
-  text-shadow: #FFFFFF 0 0 .5rem ;
+  text-shadow: #FFFFFF 0 0 .5rem;
   border: 1px solid #ffc600;
   padding: .5rem 1rem;
   border-radius: .5rem;
@@ -84,6 +84,27 @@ header ul li a:hover {
   justify-content: center;
 }
 
+.keys.keys__effect,
+.keys.keys__drums {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.keys.keys__effect .effects__row,
+.keys.keys__drums .drums__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 40%;
+}
+
+.keys.keys__drums .drums__row {
+  max-width: 35%;
+}
+
 .key {
   border: .4rem solid black;
   border-radius: .5rem;
@@ -98,10 +119,18 @@ header ul li a:hover {
   text-shadow: 0 0 .5rem black;
 }
 
+.keys.keys__effect .key {
+  color: #E95D3D;
+}
+
+.keys.keys__drums .key {
+  color: #91FFF7;
+}
+
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: currentColor;
+  box-shadow: 0 0 1rem currentColor;
 }
 
 kbd {
@@ -114,4 +143,11 @@ kbd {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+
+.keys.keys__effect .sound {
+  color: #d1cbf9;
+}
+.keys.keys__drums .sound {
+  color: #F900D8;
 }

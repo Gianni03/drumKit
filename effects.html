@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,73 +8,111 @@
   <meta name="description" content="A simple JavaScript sound effects kit that plays sounds when keys are pressed.">
   <meta name="keywords" content="JavaScript, sound effects, audio, web development">
   <meta name="author" content="Gianni Pasquinelli">
-  <script defer async src="effects.js"></script>
-  <title>JS Drum Kit</title>
+  <script defer async src="index.js"></script>
+  <title>JS Sound Effects</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="https://fav.farm/%F0%9F%A5%A2" />
 </head>
+
 <body class="effects">
-   <header>
-      <h1>JS Sound Effects Kit</h1>
+  <header>
+    <h1>JS Sound Effects</h1>
 
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./drums.html">Drums</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./drums.html">Drums</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="keys">
+  <div class="keys keys__effect">
+    <div class="effects__row">
+      <div data-key="KeyQ" class="key">
+        <kbd>Q</kbd>
+        <span class="sound">Retro 1</span>
+      </div>
+      <div data-key="KeyW" class="key">
+        <kbd>W</kbd>
+        <span class="sound">Retro 2</span>
+      </div>
+      <div data-key="KeyE" class="key">
+        <kbd>E</kbd>
+        <span class="sound">Short</span>
+      </div>
+      <div data-key="KeyR" class="key">
+        <kbd>R</kbd>
+        <span class="sound">Sub 1</span>
+      </div>
+      <div data-key="KeyT" class="key">
+        <kbd>T</kbd>
+        <span class="sound">Sub 2</span>
+      </div>
       <div data-key="KeyA" class="key">
         <kbd>A</kbd>
-        <span class="sound">clap</span>
+        <span class="sound">Braam 1</span>
       </div>
       <div data-key="KeyS" class="key">
         <kbd>S</kbd>
-        <span class="sound">hihat</span>
+        <span class="sound">Braam 2</span>
       </div>
       <div data-key="KeyD" class="key">
         <kbd>D</kbd>
-        <span class="sound">kick</span>
-      </div>
-      <div data-key="KeyF" class="key">
-        <kbd>F</kbd>
-        <span class="sound">openhat</span>
-      </div>
-      <div data-key="KeyG" class="key">
-        <kbd>G</kbd>
-        <span class="sound">boom</span>
-      </div>
-      <div data-key="KeyH" class="key">
-        <kbd>H</kbd>
-        <span class="sound">ride</span>
-      </div>
-      <div data-key="KeyJ" class="key">
-        <kbd>J</kbd>
-        <span class="sound">snare</span>
-      </div>
-      <div data-key="KeyK" class="key">
-        <kbd>K</kbd>
-        <span class="sound">tom</span>
-      </div>
-      <div data-key="KeyL" class="key">
-        <kbd>L</kbd>
-        <span class="sound">tink</span>
+        <span class="sound">Impact 1</span>
       </div>
     </div>
 
-    <audio data-key="KeyA" src="sounds/clap.wav"></audio>
-    <audio data-key="KeyS" src="sounds/hihat.wav"></audio>
-    <audio data-key="KeyD" src="sounds/kick.wav"></audio>
-    <audio data-key="KeyF" src="sounds/openhat.wav"></audio>
-    <audio data-key="KeyG" src="sounds/boom.wav"></audio>
-    <audio data-key="KeyH" src="sounds/ride.wav"></audio>
-    <audio data-key="KeyJ" src="sounds/snare.wav"></audio>
-    <audio data-key="KeyK" src="sounds/tom.wav"></audio>
-    <audio data-key="KeyL" src="sounds/tink.wav"></audio>
+    <div class="effects__row">
+      <div data-key="KeyY" class="key">
+        <kbd>Y</kbd>
+        <span class="sound">Whoosh 1</span>
+      </div>
+      <div data-key="KeyU" class="key">
+        <kbd>U</kbd>
+        <span class="sound">Whoosh 2</span>
+      </div>
+      <div data-key="KeyI" class="key">
+        <kbd>I</kbd>
+        <span class="sound">Impact 2</span>
+      </div>
+      <div data-key="KeyO" class="key">
+        <kbd>O</kbd>
+        <span class="sound">Impact 3</span>
+      </div>
+      <div data-key="KeyP" class="key">
+        <kbd>P</kbd>
+        <span class="sound">Punch 1</span>
+      </div>
+      <div data-key="KeyJ" class="key">
+        <kbd>J</kbd>
+        <span class="sound">Punch 2</span>
+      </div>
+      <div data-key="KeyK" class="key">
+        <kbd>K</kbd>
+        <span class="sound">Retro</span>
+      </div>
+    </div>
+  </div>
+
+  <audio data-key="KeyQ" src="./soundeffects/Retro - Digital Eagle.wav"></audio>
+  <audio data-key="KeyW" src="./soundeffects/Retro - Magic Respawn.wav"></audio>
+  <audio data-key="KeyE" src="./soundeffects/Short - Uber Vacuum.wav"></audio>
+  <audio data-key="KeyR" src="./soundeffects/Sub - Distant Stargate.wav"></audio>
+  <audio data-key="KeyT" src="./soundeffects/Sub - Mini Impact.wav"></audio>
+  <audio data-key="KeyA" src="./soundeffects/Braam - Intensive Stare.wav"></audio>
+  <audio data-key="KeyS" src="./soundeffects/Braam - Zone End.wav"></audio>
+  <audio data-key="KeyD" src="./soundeffects/Impact - Cease Fire.wav"></audio>
+
+  <audio data-key="KeyY" src="./soundeffects/Whoosh - Land Speeder.wav"></audio>
+  <audio data-key="KeyU" src="./soundeffects/Whoosh - Trapped Firecracker.wav"></audio>
+  <audio data-key="KeyI" src="./soundeffects/Impact - Jaw Breaker.wav"></audio>
+  <audio data-key="KeyO" src="./soundeffects/Impact - Wait For It.wav"></audio>
+  <audio data-key="KeyP" src="./soundeffects/Punch - Sploop.wav"></audio>
+  <audio data-key="KeyJ" src="./soundeffects/Punch - Whack A Bot.wav"></audio>
+  <audio data-key="KeyK" src="./soundeffects/Retro - Chip Power.wav"></audio>
 
 
 
 </body>
+
 </html>

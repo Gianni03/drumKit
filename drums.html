@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,72 +8,94 @@
   <meta name="description" content="A simple JavaScript drum kit that plays sounds when keys are pressed.">
   <meta name="keywords" content="JavaScript, drum kit, sound, audio, web development">
   <meta name="author" content="Gianni Pasquinelli">
-  <title>JS Drum Kit</title>
+  <title>JS Real Drum Kit</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="https://fav.farm/%F0%9F%A4%98%F0%9F%8F%BC" />
+  <script async defer src="./index.js"></script>
 </head>
+
 <body class="realDrum">
-     <header>
-      <h1>JS Drums</h1>
+  <header>
+    <h1>JS Real Drums</h1>
 
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./effects.html">Effects</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./effects.html">Effects</a></li>
+      </ul>
+    </nav>
+  </header>
 
-   <div class="keys">
+  <div class="keys keys__drums">
+    <div class="drums__row">
+      <div data-key="KeyQ" class="key">
+        <kbd>Q</kbd>
+        <span class="sound">tom</span>
+      </div>
+      <div data-key="KeyW" class="key">
+        <kbd>W</kbd>
+        <span class="sound">Kick</span>
+      </div>
+      <div data-key="KeyE" class="key">
+        <kbd>E</kbd>
+        <span class="sound">Kick</span>
+      </div>
       <div data-key="KeyA" class="key">
         <kbd>A</kbd>
-        <span class="sound">clap</span>
+        <span class="sound">Crash</span>
       </div>
       <div data-key="KeyS" class="key">
         <kbd>S</kbd>
-        <span class="sound">hihat</span>
+        <span class="sound">Hats</span>
       </div>
       <div data-key="KeyD" class="key">
         <kbd>D</kbd>
-        <span class="sound">kick</span>
+        <span class="sound">Snare</span>
       </div>
-      <div data-key="KeyF" class="key">
-        <kbd>F</kbd>
-        <span class="sound">openhat</span>
+    </div>
+    <div class="drums__row">
+      <div data-key="KeyY" class="key">
+        <kbd>Y</kbd>
+        <span class="sound">Openhat</span>
       </div>
-      <div data-key="KeyG" class="key">
-        <kbd>G</kbd>
-        <span class="sound">boom</span>
+      <div data-key="KeyU" class="key">
+        <kbd>U</kbd>
+        <span class="sound">Bell</span>
+      </div>
+      <div data-key="KeyI" class="key">
+        <kbd>I</kbd>
+        <span class="sound">Ride</span>
       </div>
       <div data-key="KeyH" class="key">
         <kbd>H</kbd>
-        <span class="sound">ride</span>
+        <span class="sound">Perc</span>
       </div>
       <div data-key="KeyJ" class="key">
         <kbd>J</kbd>
-        <span class="sound">snare</span>
+        <span class="sound">Snare</span>
       </div>
       <div data-key="KeyK" class="key">
         <kbd>K</kbd>
-        <span class="sound">tom</span>
-      </div>
-      <div data-key="KeyL" class="key">
-        <kbd>L</kbd>
-        <span class="sound">tink</span>
+        <span class="sound">kick</span>
       </div>
     </div>
+  </div>
 
-    <audio data-key="KeyA" src="sounds/clap.wav"></audio>
-    <audio data-key="KeyS" src="sounds/hihat.wav"></audio>
-    <audio data-key="KeyD" src="sounds/kick.wav"></audio>
-    <audio data-key="KeyF" src="sounds/openhat.wav"></audio>
-    <audio data-key="KeyG" src="sounds/boom.wav"></audio>
-    <audio data-key="KeyH" src="sounds/ride.wav"></audio>
-    <audio data-key="KeyJ" src="sounds/snare.wav"></audio>
-    <audio data-key="KeyK" src="sounds/tom.wav"></audio>
-    <audio data-key="KeyL" src="sounds/tink.wav"></audio>
+  <audio data-key="KeyA" src="./drums/crash-acoustic.wav"></audio>
+  <audio data-key="KeyS" src="./drums/Hats - Metal.wav"></audio>
+  <audio data-key="KeyD" src="./drums/Snare - GNR.wav"></audio>
+  <audio data-key="KeyQ" src="./drums/tom-acoustic01.wav"></audio>
+  <audio data-key="KeyW" src="./drums/kick-heavy.wav"></audio>
+  <audio data-key="KeyE" src="./drums/kick-tight.wav"></audio>q
+  <audio data-key="KeyY" src="./drums/openhat-acoustic01.wav"></audio>
+  <audio data-key="KeyU" src="./drums/ride-acoustic01.wav"></audio>
+  <audio data-key="KeyI" src="./drums/ride-acoustic02.wav"></audio>
+  <audio data-key="KeyH" src="./drums/Perc - Transit.wav"></audio>
+  <audio data-key="KeyJ" src="./drums/snare-acoustic02.wav"></audio>
+  <audio data-key="KeyK" src="./drums/kick-tight.wav"></audio>
 
 
 
 </body>
+
 </html>
