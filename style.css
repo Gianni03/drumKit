@@ -1,6 +1,19 @@
 html {
   font-size: 10px;
+}
+
+.jsDrumKit {
   background: url('./background.jpg') bottom center;
+  background-size: cover;
+}
+
+.realDrum{
+  background: url('./bgblackdrums.jpg') bottom center;
+  background-size: cover;
+}
+
+.effects {
+  background: url('./bgsounds.png') center;
   background-size: cover;
 }
 
